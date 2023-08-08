@@ -11,6 +11,7 @@
     ></script>
 </head>
 <body>
+  <main>
     <section>
         <nav>
         <div class="row">
@@ -28,13 +29,37 @@
                     <li><a href="" class="nav__link">Login</a></li>
                     <li><a href="" class="nav__link nav__link--signup">Sign Up</a></li>
                     </ul>
+                    <button class="button__menu" onclick="openMenu()"></button>
+                    <i class="fas fa-bars"></i>
+                    <div class="menu__backdrop">
+                      <button class="button__menu button__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i></button>
+                        <ul class="menu__links">
+                          <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                          </li>
+                          <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                          </li>
+                          <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                          </li>
+                          <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                          </li>
+                          <li class="menu__list">
+                          <a href="#" class="menu__link" onclick="closeMenu()">Sign Up</a>
+                          </li>
+                        </ul>
+                    </div>
             </div>
             </div>
-        </div>
+          </div>
     </nav>
     </section>
     <header>
     <section id="header">
+      <div class="container">
         <div class="row">
         <div class="header__container">
             <div class="header__container--text">
@@ -54,7 +79,7 @@
             <button type="submit" class="button">Get Started</button>
          </div>
         
-            <h5>OUR TRUSTED CUSTOMERS</h5>
+            <h5 class="trusted__customers">OUR TRUSTED CUSTOMERS</h5>
             <figure class="customers__img--container">
             <img class="customers__img" src="./customerslogo.png" alt="">
             </figure>
@@ -62,6 +87,7 @@
             <img class="firstimg" src="./img1.svg" alt="">
         </div>
         </div>
+      </div>
     </header>
     </section>
 
@@ -73,7 +99,6 @@
         <p class="features__para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
         </p>
-
         <div class="services__container">
             <div class="services">
                 <figure class="service__logo">
@@ -86,14 +111,12 @@
                 </p>
                 </div>
             </div>
-
              <div class="services">
                 <figure class="service__logo">
                   <img
                     class="service__img"
                     src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
-                    alt=""
-                  />
+                    alt=""/>
                 </figure>
                 <div class="service__description">
                   <h1 class="service__description--title">24/7 Support</h1>
@@ -175,6 +198,7 @@
     </section>
 
     <section>
+      <div class="container">
         <div class="row">
         <div class="quality__container">
             <div class="quality__work--container">
@@ -184,7 +208,6 @@
             <p class="quality__work--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <button class="quality__work--button">Learn More</button>
             </div>
-            </div>
             <div class="quality__work--imgwrapper">
                 <img
                   src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png"
@@ -192,13 +215,12 @@
                   class="quality__work--img"/>
             </div>
         </div>
-        </div>
-
-
+      </div>
+ </div>
     </section>
-    <div class="space__container"></div>
 
     <section>
+      <div class="container">
         <div class="row">
             <div class="steps__container">
                 <div class="steps__img--wrapper">
@@ -233,9 +255,11 @@
             </div>
             </div>
             </div>
+            </div>
     </section>
 
     <section id="values">
+      <div class="container">
         <div class="row">
         <div class="values__container">
             <div class="values__text--container">
@@ -243,14 +267,80 @@
             <h3 class="values__title"><span class="purple">VALUES</h3></span>
             <h1 class="values__header">We Always Abide by Our <span class="purple">Principles.</h1></span>
             <p class="values__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <div class="values__info--container">
+            <div class="values__info">
+              <div class="values__info--a">
+                <div class="values__info--a-header">
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="values__logo-1">
+                      <line x1="12" y1="1" x2="12" y2="23"></line>
+                      <path
+                        d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                      ></path>
+                    </svg>
+                    <h3 class="values__info--title">Affordable</h3>
+                    </div>
+                    <p class="values__info--para">
+                    We promise to offer you the best rate we can, at par with
+                    the industry standard. </p>
+                  </div>
+                  <div class="values__info">
+                    <div class="values__info--b">
+                      <div class="values__info--b-header">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="values__logo-2"
+                      >
+                        <rect
+                          class="suitcase__logo"
+                          x="2"
+                          y="7"
+                          width="20"
+                          height="14"
+                          rx="2"
+                          ry="2"
+                        ></rect>
+                        <path
+                          d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                        ></path>
+                      </svg>
+                          <h3 class="values__info--title">Professionalism</h3>
+                          </div>
+                          <p class="values__info--para">
+                          We assure you that our templates are designed and created by professional designers.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
             <button class="values__button">Learn More</button>
             </div>
+          </div>
             <div class="values__img--container">
                 <img
                   src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
                   alt=""
                   class="values__img"/>
             </div>
+        </div>
         </div>
         </div>
 
@@ -262,32 +352,311 @@
 
 
         <section id="testimonals">
-
+          <div class="row">
+            <div class="container">
+              <div class="testimonials__container">
+                <div class="testimonials__img--wrapper">
+                  <img
+                  src="https://treact.owaiskhan.me/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
+                  alt=""
+                  class="testimonial__img"
+                />
+                </div>
+                <div class="testimonials__text--wrapper">
+                  <span class="purple testimonials__title">TESTIMONIALS</span>
+                  <h1 class="testimonials__header">Our Clients <span class="purple">Love Us.</span></h1>
+                <p class="testimonials__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                  ad minim veniam.</p>
+                  <div class="ratings">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h5 class="testimonial__subtitle">Amazing User Experience</h5>
+                  <p class="testimonial__subpara">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco
+                  </p>
+                  <div class="user__testimonial">
+                    <div class="user__abt">
+                      <figure class="user__img--wrapper">
+                        <img
+                          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80"
+                          alt=""
+                          class="user__img"
+                        />
+                      </figure>
+                      <div class="user__info">
+                        <h3 class="user__name">Charlotte Hale</h3>
+                        <span class="user__title">Director, Delos Inc</span>
+                      </div>
+                    </div>
+                    <div class="arrows">
+                      <button class="arrow__left">
+                        <svg
+                          class="left__arrow"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                      </button>
+                      <button class="arrow__right">
+                        <svg
+                          class="left__arrow"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="FAQS">
+          <div class="row">
+            <div class="container">
+              <div class="faqs__container">
+                <span class="purple testimonials__title">FAQS</span>
+                <h1 class="testimonials__header">You have <span class="purple">Questions?</span></h1>
+                <p class="testimonials__para">And we have got answers to all of them. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit.</p>
+                  <ul class="faqs__list">
+                    <li>
+                      <a class="faqs__questions" href="#"
+                  >Are all the templates customizable?
+                  <svg
+                    class="faq__down--arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-down"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </a>
+                    </li>
+                    <li>
+                      <a class="faqs__questions" href="#"
+                        >How long do you usually support a standalone template for?
+                        <svg
+                          class="faq__down--arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-down"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="faqs__questions" href="#"
+                        >What kind of payment methods do you accept?
+                        <svg
+                          class="faq__down--arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-down"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="faqs__questions" href="#"
+                        >Is there a subscription service to get all the latest
+                        templates?
+                        <svg
+                          class="faq__down--arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-down"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="faqs__questions" href="#"
+                        >Are the templates compatible with react?
+                        <svg
+                          class="faq__down--arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-down"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="faqs__questions" href="#"
+                        >Do you support internet explorer 11?
+                        <svg
+                          class="faq__down--arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-chevron-down"
+                        >
+                          <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
 
+                  </ul>
+              </div>
+            </div>
+          </div>
 
         </section>
 
         <section id="banner">
-
-
+          <div class="row">
+            <div class="container">
+              <div class="banner__container">
+                <div class="banner__header--container">
+                  <h3 class="banner__header">Developers all over the world are happily using Treact.</h3>
+                </div>
+                <div class="banner__button--container">
+                  <button class="banner__button1">Get Started</button>
+                  </div>
+                  <button class="banner__button2">Contact Us</button>
+          
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
+      </main>
 
+      <footer>
+          <div class="footer__container">
+            <div class="footer__row">
+              <div class="links__wrapper">
+                <div class="links link__primary">
+                  <span class="link__title">MAIN</span>
+                  <a href="#" class="link">Blog</a>
+              <a href="#" class="link">FAQs</a>
+              <a href="#" class="link">Support</a>
+              <a href="#" class="link">About us</a>
+            </div>
+            <div class="links">
+              <span class="link__title">PRODUCT</span>
+              <a href="#" class="link">Log in</a>
+              <a href="#" class="link">Personal</a>
+              <a href="#" class="link">Business</a>
+              <a href="#" class="link">Team</a>
+            </div>
+            <div class="links">
+              <span class="link__title">PRESS</span>
+              <a href="#" class="link">Logos</a>
+              <a href="#" class="link">Event</a>
+              <a href="#" class="link">Stories</a>
+              <a href="#" class="link">Office</a>
+            </div>
+            <div class="links">
+              <span class="link__title">TEAM</span>
+              <a href="#" class="link">Career</a>
+              <a href="#" class="link">Founders</a>
+              <a href="#" class="link">Culture</a>
+              <a href="#" class="link">Onboarding</a>
+            </div>
+            <div class="links link__secondary">
+              <span class="link__title">LEGAL</span>
+              <a href="#" class="link">GDPR</a>
+              <a href="#" class="link">Privacy Policy</a>
+              <a href="#" class="link">Terms of Service</a>
+              <a href="#" class="link">Disclaimer</a>
+            </div>
+          </div>
+          <div class="footer__info">
+            <figure class="footer__logo">
+              <img
+                src="https://treact.owaiskhan.me/static/media/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
+                alt=""
+                class="footer__img"
+              />
+              <h4 class="footer__info--title">Treact Inc.</h4>
+            </figure>
+            <span class="copyright__info"
+              >© 2023 Treact Inc. All Rights Reserved.</span
+            >
+            <div class="footer__links">
+              <a class="footer__link" href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a class="footer__link" href="#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="footer__link" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <section id="footer">
+        </footer>
 
-        </section>
-
-
-
-
-
-   
-    
-
-    
 </body>
 </html>
