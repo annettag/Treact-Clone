@@ -221,7 +221,6 @@ h5 {
 
 /* FEATURES */
 
-
 .row__features {
     display: flex;
     flex-direction: column;
@@ -578,9 +577,14 @@ QUALITY WORK
 }
 
 .pricing__section {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
     width: calc(100% / 3);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-top: 30px;
 }
 
@@ -618,6 +622,7 @@ QUALITY WORK
     text-align: center;
     line-height: 2;
     font-weight: 700;
+    margin: 10px 0;
 }
 
 .cost {
@@ -625,6 +630,7 @@ QUALITY WORK
     text-align: center;
     line-height: 2;
     font-weight: 700;
+    margin: 5px 0;
 }
 
 .frequency {
@@ -633,6 +639,7 @@ QUALITY WORK
     line-height: 2;
     text-align: center;
     font-weight: 700;
+    margin: 5px 0;
 }
 
 .customer__type {
@@ -641,6 +648,7 @@ QUALITY WORK
     letter-spacing: 0.025em;
     line-height: 3;
     text-align: center;
+    margin: 5px 0;
 }
 
 .pricing_lists {
@@ -649,9 +657,11 @@ QUALITY WORK
     line-height: 3;
     text-align: center;
     font-weight: 500;
+    margin: 5px 0;
 }
 
 .pricing__button1 {
+    margin-top: auto;
     border: 2px solid;
     font-size: 16px;
     border-radius: 30px;
