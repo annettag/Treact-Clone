@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap");
 
 * {
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
     padding: 0;
     margin: 0;
@@ -45,6 +46,9 @@ img {
 
 .purple {
     color: rgba(100, 21, 255, 1);
+}
+.white {
+    color: white;
 }
 
 p {
@@ -565,6 +569,143 @@ QUALITY WORK
     margin: 12px 0;
   }
 
+/* PRICING */
+
+
+.pricing__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pricing__section {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.pricing__text--container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing__section--personal {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+    padding: 12px;
+}
+
+
+.pricing__section--business {
+    background-color: rgb(100 21 255);
+    color: white;
+    border-radius: 25px;
+    padding: 12px;
+
+}
+
+.pricing__section--enterprise {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+    padding: 12px;
+}
+
+.pricing__title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.cost {
+    font-size: 48px;
+    text-align: center;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.frequency {
+    font-size: 16px;
+    color: #A0AEC0;
+    line-height: 2;
+    text-align: center;
+    font-weight: 700;
+}
+
+.customer__type {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 3;
+    text-align: center;
+}
+
+.pricing_lists {
+    font-size: 16px;
+    color: #718096;
+    line-height: 3;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pricing__button1 {
+    border: 2px solid;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: rgb(56, 178, 172);
+    color: rgba(247, 250, 252, 1);
+    padding: 16px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    right: 4px;
+    width: 45%;
+    top: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+    
+
+}
+.pricing__button2 {
+    border: 2px solid white;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: white;
+    color: #6415FF;
+    padding: 16px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    right: 4px;
+    width: 45%;
+    top: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+.pricing__button3 {
+    border: 2px solid white;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: rgb(245, 101, 101);
+    color: white;
+    padding: 16px 28px;
+    font-weight: 700;
+    font-size: 16px;
+    right: 4px;
+    width: 45%;
+    top: 30px;
+    margin-left: 80px;
+    margin-top: 20px;
+    
+    
+
+}
+
+
+rgb(245, 101, 101)
 
 /* TESTIMONIALS */
 
@@ -875,9 +1016,9 @@ QUALITY WORK
     border: none;
   }
 
-  /* Responsiveness */
+  /* RESPONSIVENESS */
 
-  @media(max-width:1024px){
+  @media (max-width: 1024px) {
 
     .button__menu {
         display: block;
@@ -892,6 +1033,7 @@ QUALITY WORK
     max-height: 100vh;
     overflow-y: hidden;
   }
+
   .nav__links {
     display: none;
   }
@@ -980,11 +1122,237 @@ QUALITY WORK
   .footer__container {
     width: 100%;
   }
-
+  }
 
   @media(max-width: 768px){
 
-  }
+  .header__style {
+    font-size: 30px;
+}
+
+.nav__link--list {
+    display: none;
+}
+
+.button__menu {
+    display: block;
+}
+
+.input__container {
+    width: 100%;
+}
+
+.header__container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__container--text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.firstimg {
+    width: 70%;
+}
+
+.header__para {
+    align-items: center;
+}
+
+.header__style {
+    font-size: 36px;
+}
+
+.values__text {
+    flex-direction: column;
+}
+
+.values__info--container {
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px ;
+}
+
+button {
+    font-size: 14px;
+}
+
+.section__para {
+    font-size: 16px;
+}
+
+.services {
+    width: calc(100%/2);
+}
+
+
+.user__testimonial {
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.user__title {
+    text-align: center;
+}
+
+}
+
+@media (max-width: 550px) {
+.header__img--wrapper {
+    width: 100%;
+}
+
+p{
+    font-size: 14px;
+}
+
+.header__input{
+    padding: 16px 0 16px 32px;
+}
+
+.header__input--button{
+    position: relative;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px 0;
+}
+
+.features__services--service {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service__title{
+    margin-top: 8px;
+}
+
+.service__para{
+    margin-top: 4px;
+}
+
+.service__text--wrapper{
+    padding: 0;
+}
+
+.section__wrapper{
+    flex-direction: column-reverse;
+}
+
+.section__description--wrapper{
+    width: 100%;
+    text-align: center;
+}
+
+.section__description{
+    padding: 0;
+    text-align: center;
+}
+
+.section__title{
+    font-size: 30px;
+}
+
+.section__img--wrapper{
+    width: 100%;
+    margin: 64px 0px;
+
+}
+
+.steps__wrapper--section{
+    flex-direction: column;
+}
+
+.steps__wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps__number{
+    margin: 0;
+}
+
+.principle__title--wrapper{
+    justify-content: center;
+}
+
+.testimonial__person--nav{
+    justify-content: center;
+}
+
+.testimonial__person--wrapper{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.person__name--wrapper{
+    margin: 0;
+}
+
+.testimonial__button{
+    margin: 0 12px; 
+}
+
+.started__wrapper{
+    padding: 80px 20px;
+}
+
+.started__description--para{
+    font-size: 24px ;
+}
+
+.started__buttons--wrapper{
+    flex-direction: column ;
+    align-items: center;
+}
+
+.get__started--button{
+    margin: 0 0 16px 0;
+
+}
+
+.started__button{
+    padding: 12px 24px;
+}
+
+.link__wrapper{
+    width: calc(100%/3);
+    text-align: center;
+    margin-top: 48px;
+}
+
+.footer__links--list{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.links__wrapper{
+    justify-content: center;
+}
+
+.footer__wrapper{
+    flex-direction: column;
+}
+
+.footer__logo{
+    margin-bottom: 32px;
+}
+
+.footer__socials--wrapper{
+    margin-top: 32px;
+}
+}
 
   
 
